@@ -16,9 +16,9 @@ const NewsDetail = () => {
 
   useEffect(() => {
     if (newsItem) {
-      document.title = `Bodhisattwa | ${newsItem.title}`;
+      document.title = `Gourab | ${newsItem.title}`;
     } else {
-      document.title = "Bodhisattwa | News Not Found";
+      document.title = "Gourab | News Not Found";
     }
   }, [newsItem]);
 

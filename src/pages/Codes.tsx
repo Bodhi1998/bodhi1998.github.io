@@ -7,7 +7,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Codes = () => {
   useEffect(() => {
-    document.title = "Bodhisattwa | Codes";
+    document.title = "Gourab | Codes";
   }, []);
 
   const [filter, setFilter] = useState<string | null>(null);
@@ -17,25 +17,25 @@ const Codes = () => {
     {
       id: "1",
       title: "Gate Pass Management System",
-      description: "An RFID-based gate pass system using ESP32, Firebase, and MySQL, enabling real-time authentication, time-based access control, remote monitoring via Baidyahboards.",
+      description: "An RFID-based gate pass system using ESP32, Firebase, and MySQL, enabling real-time authentication, time-based access control, remote monitoring via dashboards.",
       tags: ["ESP32", "Firebase", "MySQL", "PHP", "HTML", "CSS", "JavaScript"],
-      githubUrl: "https://github.com/Bodhisattwa21/GMS-Gate-Pass-Management-System",
-      liveUrl: "https://Bodhisattwa21.github.io/GMS-Gate-Pass-Management-System/"
+      githubUrl: "https://github.com/gourab21/GMS-Gate-Pass-Management-System",
+      liveUrl: "https://gourab21.github.io/GMS-Gate-Pass-Management-System/"
     },
     {
       id: "2",
       title: "HeartStack : Heart Disease Prediction",
       description: "A Multi-Layered Ensemble Model for Heart Disease Prediction.",
       tags: ["Python","Ensemble Learning","Stacking","Machine Learning"],
-      githubUrl: "https://github.com/Bodhisattwa21/HeartStack-A-Multi-Layered-Ensemble-Model-for-Heart-Disease-Prediction"
+      githubUrl: "https://github.com/gourab21/HeartStack-A-Multi-Layered-Ensemble-Model-for-Heart-Disease-Prediction"
     },
     {
       id: "3",
       title: "Personal Academic Website",
       description: "Academic Portfolio website with smooth animations and responsive design.",
       tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vite"],
-      githubUrl: "https://github.com/Bodhisattwa21/Bodhisattwa21.github.io",
-      liveUrl: "https://Bodhisattwa.org"
+      githubUrl: "https://github.com/gourab21/gourab21.github.io",
+      liveUrl: "https://gourab.org"
     },
     
     // Add more projects as needed

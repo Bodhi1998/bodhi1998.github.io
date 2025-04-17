@@ -115,8 +115,8 @@ export default {
 					}
 				},
 				'path-animation': {
-					'0%': { 'stroke-Baidyahoffset': '1000' },
-					'100%': { 'stroke-Baidyahoffset': '0' }
+					'0%': { 'stroke-dashoffset': '1000' },
+					'100%': { 'stroke-dashoffset': '0' }
 				},
 				'pulse-slow': {
 					'0%, 100%': { opacity: '1' },

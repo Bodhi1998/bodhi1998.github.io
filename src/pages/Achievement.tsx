@@ -7,7 +7,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Achievement = () => {
   useEffect(() => {
-    document.title = "Bodhisattwa | Achievement";
+    document.title = "Gourab | Achievement";
   }, []);
 
   // Sample achievement data

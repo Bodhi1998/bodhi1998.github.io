@@ -15,22 +15,22 @@ export default function Footer() {
   const socialLinks: SocialLink[] = [
     {
       name: 'GitHub',
-      href: 'https://github.com/Bodhisattwa21',
+      href: 'https://github.com/gourab21',
       icon: <Github className="h-5 w-5" />
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/Bodhisattwa21/',
+      href: 'https://www.linkedin.com/in/gourab21/',
       icon: <Linkedin className="h-5 w-5" />
     },
     {
       name: 'X (Twitter)',
-      href: 'https://x.com/BodhisattwaBaidya21',
+      href: 'https://x.com/gourabdas21',
       icon: <Twitter className="h-5 w-5" />
     },
     {
       name: 'YouTube',
-      href: 'https://www.youtube.com/@BodhisattwaBaidya2128',
+      href: 'https://www.youtube.com/@gourabdas2128',
       icon: <YoutubeIcon className="h-5 w-5" />
     },
     {
@@ -45,7 +45,7 @@ export default function Footer() {
     // },
     {
       name: 'Email',
-      href: 'mailto:BodhisattwaBaidya2128@gmail.com',
+      href: 'mailto:gourabdas2128@gmail.com',
       icon: <Mail className="h-5 w-5" />
     }
   ];
@@ -55,7 +55,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-foreground/60">
-            © {currentYear} Bodhisattwa. All rights reserved.
+            © {currentYear} Gourab. All rights reserved.
           </p>
           
           <div className="flex items-center space-x-4">
