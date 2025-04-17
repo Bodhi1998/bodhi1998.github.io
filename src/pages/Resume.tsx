@@ -22,10 +22,45 @@ const Resume = () => {
   const experienceData: TimelineItemData[] = [
     {
       id: "1",
-      title: "Post Graduate Researcher",
+      title: "Researcher Scholar",
       company: <a href="https://vidyamandira.ac.in/">Ramakrishna Mission Vidyamandira</a> ,
       period: "2024 - Present",
-      description: "Working on development and Execution of algorithms and models in the field of Machine learning and UAV Security."
+      description: "Secure Data Dissemination in UAV."
+    },
+    {
+      id: "2",
+      title: "Member",
+      company: "Internation al Association of Engineers (IAENG) - Hong Kong",
+      period: "2024 - Present",
+      description: "Member of IAENG, a global association of engineers and computer scientists."
+    },
+    {
+      id: "3",
+      title: "Mentor",
+      company: "AI- Explain You Science (AI-EYS)",
+      period: "2024 - Present",
+      description: "Mentoring students in AI and ML projects, guiding them through practical applications and research."
+    },
+    {
+      id: "4",
+      title: "Teaching Assistant",
+      company: "Ramakrishna Mission Vidyamandira",
+      period: "2024 - Present",
+      description: "Assisting in teaching undergraduate courses, providing support to students in their academic journey."
+    },
+    {
+      id: "5",
+      title: "Drone Developer",
+      company: "Qoptars Pvt. Ltd.",
+      period: "2022 - Present",
+      description: "Developing and testing drone technology for various applications, including surveillance and data collection."
+    },
+    {
+      id: "6",
+      title: "Summer Intern",
+      company: "Oil and Natural Gas Corporation (ONGC)",
+      period: "2019 - 3 Months",
+      description: "Worked on a project related to data analysis and optimization in the oil and gas sector, gaining practical experience in the industry."
     }
     
   ];
@@ -33,32 +68,26 @@ const Resume = () => {
   const educationData: TimelineItemData[] = [
     {
       id: "ed1",
-      title: "Master of Science - Computer Science",
+      title: "PhD - Computer Science",
       company: <a href="https://vidyamandira.ac.in/">Ramakrishna Mission Vidyamandira</a>,
       period: "2024 - Present",
-      description: "CGPA - 9.76 (upto Semester 1)."
+      description: "Pursuing PhD in Computer Science with a focus on UAV security and data dissemination."
     },
     {
       id: "ed2",
-      title: "Bachelor of Science in Computer Science",
-      company: <a href="https://du.ac.in/">University of Delhi</a> ,
-      period: "2020 - 2023",
+      title: "Master of Computer Applications",
+      company: <a href="https://www.amrita.edu/">Amrita Vishwa Vidyamandira, India</a> ,
+      period: "2021 - 2023",
       description: "CGPA - 9.23. College First Rank Holder."
     },
     {
       id: "ed3",
-      title: "Higher Secondary Certificate Examination (+2)",
+      title: "Bachelor of Science in Computer Science",
       company: <a href="https://www.rkmvdeoghar.org/">Ramakrishna Mission Vidyapith Deoghar</a>,
       period: "2018 - 2020",
       description: "Percentage - 96.2 %"
     },
-    {
-      id: "ed4",
-      title: "Secondary Certificate Examination (10)",
-      company: <a href="https://www.rkmvdeoghar.org/">Sarada Vidya Mandir</a>,
-      period: "2018",
-      description: "Percentage - 93.8 %"
-    }
+    
   ];
 
   const publicationsData = [
@@ -69,11 +98,41 @@ const Resume = () => {
     //   link: "#"
     // },
     {
+      title: " An Efficient Path Selection in Software Defined UAV Network.",
+      conference: "14th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+      year: "2023",
+      link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
+    },
+    {
+      title: "  Quantum-Resistant UAV System Using Lattice-Based Key Agreement Protocol",
+      conference: " 4th International Conference on Advances in Communication Technologies and Computer Engineering (ICACTCE’24), Springer(Accepted)",
+      year: "2024",
+      link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
+    },
+    {
       title: " Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering",
       conference: "Sixth Doctoral Symposium on Intelligence Enabled Research (DoSIER)",
       year: "2024",
       link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
-    }
+    },
+    {
+      title: " Quantum-Resistant Lattice-Based Cryptography for Secure UAV Communications",
+      conference: "Smart Systems and Wireless Communication(SSWC2024), Springer(Accepted)",
+      year: "2024",
+      link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
+    },
+    {
+      title: " Quantum Lattice: Securing UAV Swarms in the Post-Quantum Era.",
+      conference: "2nd International Conference on Pervasive Computing Advances and Applications (PerCAA-2024),IET(Accepeted)",
+      year: "2024",
+      link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
+    },
+    {
+      title: "  Energy-Efficient UAV Path Planning using PSO-ABC algorithm in Obstacle-Rich Environments",
+      conference: " 22nd OITS International Conference on Information Technology (OCIT 2024).IEEE(Accepted",
+      year: "2024",
+      link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
+    },
     // ,
     // {
     //   title: "The Future of Web Development: Trends and Predictions",
@@ -214,16 +273,16 @@ const Resume = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 gap-4">
               <div>
                 <h1 className="text-3xl md:text-4xl font-bold mb-2">Bodhisattwa Baidya</h1>
-                <h2 className="text-xl text-foreground/80 mb-4">Post Graduate Researcher</h2>
+                <h2 className="text-xl text-foreground/80 mb-4">Research Scholar</h2>
                 
                 <div className="space-y-2 text-sm text-foreground/70">
                   <div className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
-                    <span>gourabdas2128@gmail.com</span>
+                    <span>bodhisattwabaidya@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    <span>+91 736-499-7118</span>
+                    <span>+91 905-1504-557</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4" />
@@ -233,7 +292,7 @@ const Resume = () => {
                 
                 <div className="flex gap-3 mt-4">
                   <a 
-                    href="https://github.com/gourab21" 
+                    href="https://github.com/Bodhi1998" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -242,7 +301,7 @@ const Resume = () => {
                     <Github className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://www.linkedin.com/in/gourab21/" 
+                    href="https://www.linkedin.com/in/bodhisattwa-baidya/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -251,7 +310,7 @@ const Resume = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://x.com/gourabdas21" 
+                    href="https://x.com/BodhisattwaBaidya21" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -260,7 +319,7 @@ const Resume = () => {
                     <Twitter className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://www.youtube.com/@gourabdas2128" 
+                    href="https://www.youtube.com/@BodhisattwaBaidya2128" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -292,7 +351,7 @@ const Resume = () => {
               </div>
               
               <a 
-                href="/lovable-uploads/GDAS_CV.pdf" 
+                href="/lovable-uploads/GBaidya_CV.pdf" 
                 className="px-4 py-2 bg-primary text-primary-foreground rounded-md flex items-center gap-2 hover:bg-primary/90 transition-colors self-start mt-2 md:mt-0"
                 target="_blank"
                 rel="noopener noreferrer"

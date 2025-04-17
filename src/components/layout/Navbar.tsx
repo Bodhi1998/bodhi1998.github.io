@@ -43,7 +43,7 @@ export default function Navbar() {
   return <header className={cn("fixed top-0 left-0 w-full z-50 transition-all duration-300", isScrolled ? "py-3 glass-panel" : "py-6 bg-transparent")}>
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link to="/" className="text-foreground text-xl font-medium flex items-center" aria-label="Go to homepage">
-          <span className="text-primary mr-1 text-2xl font-bold">G</span>
+          <span className="text-primary mr-1 text-2xl font-bold">B</span>
           <span className="inline-block">Baidya</span>
         </Link>
         

@@ -27,7 +27,7 @@ const Index = () => {
     // Simulate loading delay and then hide the loader
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500); // 2.5 seconds delay for loading effect
+    }, 0); // 2.5 seconds delay for loading effect
     
     return () => clearTimeout(timer);
   }, []);
