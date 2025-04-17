@@ -29,7 +29,7 @@ const formSchema = z.object({
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "Gourab | Contact";
+    document.title = "Bodhisattwa | Contact";
   }, []);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -104,7 +104,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="text-sm font-medium">Email</h3>
-                        <p className="text-sm text-foreground/70">gourabdas2128@gmail.com</p>
+                        <p className="text-sm text-foreground/70">BodhisattwaBaidya2128@gmail.com</p>
                       </div>
                     </div>
                     

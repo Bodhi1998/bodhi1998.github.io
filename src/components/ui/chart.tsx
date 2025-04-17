@@ -106,7 +106,7 @@ const ChartTooltipContent = React.forwardRef<
     React.ComponentProps<"div"> & {
       hideLabel?: boolean
       hideIndicator?: boolean
-      indicator?: "line" | "dot" | "dashed"
+      indicator?: "line" | "dot" | "Baidyahed"
       nameKey?: string
       labelKey?: string
     }
@@ -210,9 +210,9 @@ const ChartTooltipContent = React.forwardRef<
                             {
                               "h-2.5 w-2.5": indicator === "dot",
                               "w-1": indicator === "line",
-                              "w-0 border-[1.5px] border-dashed bg-transparent":
-                                indicator === "dashed",
-                              "my-0.5": nestLabel && indicator === "dashed",
+                              "w-0 border-[1.5px] border-Baidyahed bg-transparent":
+                                indicator === "Baidyahed",
+                              "my-0.5": nestLabel && indicator === "Baidyahed",
                             }
                           )}
                           style={

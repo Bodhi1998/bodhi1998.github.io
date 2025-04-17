@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 const Resume = () => {
   useEffect(() => {
-    document.title = "Gourab | Resume";
+    document.title = "Bodhisattwa | Resume";
   }, []);
 
   const fieldsOfInterest = [
@@ -213,13 +213,13 @@ const Resume = () => {
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 gap-4">
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold mb-2">Gourab Das</h1>
+                <h1 className="text-3xl md:text-4xl font-bold mb-2">Bodhisattwa Baidya</h1>
                 <h2 className="text-xl text-foreground/80 mb-4">Post Graduate Researcher</h2>
                 
                 <div className="space-y-2 text-sm text-foreground/70">
                   <div className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
-                    <span>gourabdas2128@gmail.com</span>
+                    <span>BodhisattwaBaidya2128@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
@@ -233,7 +233,7 @@ const Resume = () => {
                 
                 <div className="flex gap-3 mt-4">
                   <a 
-                    href="https://github.com/gourab21" 
+                    href="https://github.com/Bodhisattwa21" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -242,7 +242,7 @@ const Resume = () => {
                     <Github className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://www.linkedin.com/in/gourab21/" 
+                    href="https://www.linkedin.com/in/Bodhisattwa21/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -251,7 +251,7 @@ const Resume = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://x.com/gourabdas21" 
+                    href="https://x.com/BodhisattwaBaidya21" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -260,7 +260,7 @@ const Resume = () => {
                     <Twitter className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://www.youtube.com/@gourabdas2128" 
+                    href="https://www.youtube.com/@BodhisattwaBaidya2128" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -292,7 +292,7 @@ const Resume = () => {
               </div>
               
               <a 
-                href="/lovable-uploads/GDAS_CV.pdf" 
+                href="/lovable-uploads/GBaidya_CV.pdf" 
                 className="px-4 py-2 bg-primary text-primary-foreground rounded-md flex items-center gap-2 hover:bg-primary/90 transition-colors self-start mt-2 md:mt-0"
                 target="_blank"
                 rel="noopener noreferrer"
