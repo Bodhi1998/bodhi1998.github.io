@@ -6,7 +6,7 @@ import TimelineItem, { TimelineItemData } from '@/components/ui/TimelineItem';
 
 const Experience = () => {
   useEffect(() => {
-    document.title = "Gourab | Experience";
+    document.title = "Bodhisattwa | Experience";
   }, []);
 
   // Sample experience data

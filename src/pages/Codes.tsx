@@ -7,7 +7,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Codes = () => {
   useEffect(() => {
-    document.title = "Gourab | Codes";
+    document.title = "Bodhisattwa | Codes";
   }, []);
 
   const [filter, setFilter] = useState<string | null>(null);

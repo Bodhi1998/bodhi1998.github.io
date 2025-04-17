@@ -13,7 +13,7 @@ const Index = () => {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    document.title = "Gourab | Home";
+    document.title = "Bodhisattwa | Home";
     
     // Preload the profile image with highest priority
     const link = document.createElement('link');
@@ -78,7 +78,7 @@ const Index = () => {
                 
                 <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 md:w-2/3">
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                    <span className="text-gradient block">Gourab Das</span>
+                    <span className="text-gradient block">Bodhisattwa Baidya</span>
                   </h1>
                   
                   <div className="text-xl md:text-2xl text-foreground/80 font-medium flex flex-wrap items-center justify-center md:justify-start gap-x-2">

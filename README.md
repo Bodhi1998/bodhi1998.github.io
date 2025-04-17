@@ -1,4 +1,4 @@
-# Personal Website of Gourab
+# Personal Website of Bodhisattwa
 
 Welcome to the repository for my personal website, accessible at [www.gourab.org](http://www.gourab.org). This site serves as a comprehensive platform to showcase my professional journey, research interests, publications, and other relevant information.
 

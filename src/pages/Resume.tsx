@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 const Resume = () => {
   useEffect(() => {
-    document.title = "Gourab | Resume";
+    document.title = "Bodhisattwa | Resume";
   }, []);
 
   const fieldsOfInterest = [
@@ -213,7 +213,7 @@ const Resume = () => {
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 gap-4">
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold mb-2">Gourab Das</h1>
+                <h1 className="text-3xl md:text-4xl font-bold mb-2">Bodhisattwa Baidya</h1>
                 <h2 className="text-xl text-foreground/80 mb-4">Post Graduate Researcher</h2>
                 
                 <div className="space-y-2 text-sm text-foreground/70">
