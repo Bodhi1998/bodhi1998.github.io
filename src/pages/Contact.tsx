@@ -54,7 +54,7 @@ const Contact = () => {
         formData.append(key, value);
       });
   
-      await fetch('https://usebasin.com/f/3fc8a0313785', {
+      await fetch('https://usebasin.com/f/15dc52f9fe27', {
         method: 'POST',
         body: formData,
         headers: {
