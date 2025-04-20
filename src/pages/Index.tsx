@@ -64,7 +64,7 @@ const Index = () => {
             <div className="container mx-auto max-w-4xl">
               <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 {/* Profile Image for Mobile (shown only on small screens) - Repositioned lower */}
-                <div className="md:hidden w-48 h-48 relative mb-6 mt-16">
+                <div className="md:hidden w-64 h-64 relative mb-6 mt-16">
                   <div className="w-full h-full rounded-full bg-primary/10 flex items-center justify-center overflow-hidden border border-white/10 relative">
                     {/* Person image with optimized loading */}
                     <div className="w-full h-full overflow-hidden rounded-full relative z-10">
@@ -75,8 +75,8 @@ const Index = () => {
                         loading="eager" 
                         fetchPriority="high"
                         decoding="async"
-                        width="192" 
-                        height="192" 
+                        width="256" 
+                        height="256" 
                       />
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const Index = () => {
                 </div>
                 
                 {/* Professional Image (hidden on mobile, shown on larger screens) */}
-                <div className="hidden md:block w-60 h-60 lg:w-72 lg:h-72 relative">
+                <div className="hidden md:block w-80 h-80 lg:w-96 lg:h-96 relative">
                   <div className="w-full h-full rounded-full bg-primary/10 flex items-center justify-center overflow-hidden border border-white/10 relative">
                     {/* Person image with optimized loading */}
                     <div className="w-full h-full overflow-hidden rounded-full relative z-10">
@@ -119,8 +119,8 @@ const Index = () => {
                         loading="eager" 
                         fetchPriority="high"
                         decoding="async"
-                        width="288" 
-                        height="288" 
+                        width="384" 
+                        height="384" 
                       />
                     </div>
                   </div>
