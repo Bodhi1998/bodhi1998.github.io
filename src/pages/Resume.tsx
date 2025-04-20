@@ -22,9 +22,9 @@ const Resume = () => {
   const experienceData: TimelineItemData[] = [
     {
       id: "1",
-      title: "Researcher Scholar",
-      company: <a href="https://vidyamandira.ac.in/">Ramakrishna Mission Vidyamandira</a> ,
-      period: "2024 - Present",
+      title: "IEEE CTSoc MDA Technical Committee Member",
+      company: <a href="https://ctsoc.ieee.org/technical/technical-committees/mda-tc.html?view=article&id=310:mda-tc-members&catid=21#:~:text=Bodhisattwa%20Baidya,Ramakrishna%20Mission%20Vidyamandira">IEEE CTSoc Machine learning, Deep learning and AI in CE (MDA) Technical Committee (TC)</a>,
+      period: "2025 - Present",
       description: "Secure Data Dissemination in UAV."
     },
     {
@@ -36,7 +36,7 @@ const Resume = () => {
     },
     {
       id: "3",
-      title: "Mentor",
+      title: "Mentor and Research Scientist",
       company: "AI- Explain You Science (AI-EYS)",
       period: "2024 - Present",
       description: "Mentoring students in AI and ML projects, guiding them through practical applications and research."
@@ -69,23 +69,23 @@ const Resume = () => {
     {
       id: "ed1",
       title: "PhD - Computer Science",
-      company: <a href="https://vidyamandira.ac.in/">Ramakrishna Mission Vidyamandira</a>,
+      company: <a href="https://vidyamandira.ac.in/">Ramakrishna Mission Vidyamandira, Belur Math , India</a>,
       period: "2024 - Present",
-      description: "Pursuing PhD in Computer Science with a focus on UAV security and data dissemination."
+      description: "Secure Data Dissemination in UAV."
     },
     {
       id: "ed2",
       title: "Master of Computer Applications",
       company: <a href="https://www.amrita.edu/">Amrita Vishwa Vidyamandira, India</a> ,
       period: "2021 - 2023",
-      description: "CGPA - 9.23. College First Rank Holder."
+      description: "CGPA - 8.75"
     },
     {
       id: "ed3",
-      title: "Bachelor of Science in Computer Science",
-      company: <a href="https://www.rkmvdeoghar.org/">Ramakrishna Mission Vidyapith Deoghar</a>,
-      period: "2018 - 2020",
-      description: "Percentage - 96.2 %"
+      title: "Bachelor of Computer Applications",
+      company: <a href="https://www.ccsuniversity.ac.in/">Chaudhary Charan Singh University, India</a> ,
+      period: "2017 - 2020",
+      description: "Percentage - 61.58 %"
     },
     
   ];
@@ -210,58 +210,61 @@ const Resume = () => {
     }
   ];
 
-  const skillCategories = [
-    {
-      "name": "Programming Languages",
-      "skills": ["Python", "C++", "MATLAB", "HTML5", "CSS3", "Assembly Language","JavaScript"]
-    },
-    {
-      "name": "Frameworks & Libraries",
-      "skills": ["Sklearn","Seaborn","Django", "Node.js"]
-    },
-    {
-      "name": "Tools & Technologies",
-      "skills": ["Google Colab","Git", "Firebase", "MySQL", "XAMPP", "ESP32", "Arduino"]
-    },    
-    {
-      name: "Soft Skills",
-      skills: ["Leadership", "Communication", "Problem-solving", "Team Collaboration", "Project Management", "Mentoring"]
-    }
-  ];
+
+
+
+  // const skillCategories = [
+  //   {
+  //     "name": "Programming Languages",
+  //     "skills": ["Python", "C++", "MATLAB", "HTML5", "CSS3", "Assembly Language","JavaScript"]
+  //   },
+  //   {
+  //     "name": "Frameworks & Libraries",
+  //     "skills": ["Sklearn","Seaborn","Django", "Node.js"]
+  //   },
+  //   {
+  //     "name": "Tools & Technologies",
+  //     "skills": ["Google Colab","Git", "Firebase", "MySQL", "XAMPP", "ESP32", "Arduino"]
+  //   },    
+  //   {
+  //     name: "Soft Skills",
+  //     skills: ["Leadership", "Communication", "Problem-solving", "Team Collaboration", "Project Management", "Mentoring"]
+  //   }
+  // ];
 
   
   
-  const referencesData = [
-    {
-      name: "Sarbajit Manna",
-      title: "Assistant Professor",
-      institution: "Ramakrishna Mission Vidyamandira",
-      email: "sarbajit.cs@vidyamandira.ac.in",
-      phone: "+91-94743 39952"
-    },
-    {
-      name: "Dr. Shalini Gupta",
-      title: "Assistant Professor",
-      institution: "ARSD College, University of Delhi",
-      email: "sgupta@arsd.du.ac.in",
-      phone: "+91-99111 55236"
-    },
-    {
-      name: "Dr. Arindam Sarkar",
-      title: "Assistant Professor (HOD)",
-      institution: "Ramakrishna Mission Vidyamandira",
-      email: "arindamsarkar@vidyamandira.ac.in",
-      phone: "+91-98517 00660"
-    },
-    {
-      "name": "Revered Swami Divyasudhananda",
-      "title": "Monastic Member and Principal",
-      "institution": "Ramakrishna Mission Vidyapith, Deoghar",
-      "email": "divyasudhananda@gmail.com",
-      "phone": "+91-97485 35329"
-    }
+  // const referencesData = [
+  //   {
+  //     name: "Sarbajit Manna",
+  //     title: "Assistant Professor",
+  //     institution: "Ramakrishna Mission Vidyamandira",
+  //     email: "sarbajit.cs@vidyamandira.ac.in",
+  //     phone: "+91-94743 39952"
+  //   },
+  //   {
+  //     name: "Dr. Shalini Gupta",
+  //     title: "Assistant Professor",
+  //     institution: "ARSD College, University of Delhi",
+  //     email: "sgupta@arsd.du.ac.in",
+  //     phone: "+91-99111 55236"
+  //   },
+  //   {
+  //     name: "Dr. Arindam Sarkar",
+  //     title: "Assistant Professor (HOD)",
+  //     institution: "Ramakrishna Mission Vidyamandira",
+  //     email: "arindamsarkar@vidyamandira.ac.in",
+  //     phone: "+91-98517 00660"
+  //   },
+  //   {
+  //     "name": "Revered Swami Divyasudhananda",
+  //     "title": "Monastic Member and Principal",
+  //     "institution": "Ramakrishna Mission Vidyapith, Deoghar",
+  //     "email": "divyasudhananda@gmail.com",
+  //     "phone": "+91-97485 35329"
+  //   }
     
-  ];
+  // ];
   
   return (
     <div className="page-transition-wrapper animate-page-in min-h-screen flex flex-col">
@@ -310,7 +313,7 @@ const Resume = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://x.com/BodhisattwaBaidya21" 
+                    href="https://x.com/BodhisattwaBai2" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -319,7 +322,7 @@ const Resume = () => {
                     <Twitter className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://www.youtube.com/@BodhisattwaBaidya2128" 
+                    href="https://www.youtube.com/@bodhi27" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -330,7 +333,7 @@ const Resume = () => {
 
 
                   <a 
-                    href="https://orcid.org/0009-0009-6804-7255" 
+                    href="https://orcid.org/0009-0002-3663-4497" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
@@ -338,15 +341,15 @@ const Resume = () => {
                   >
                     <div className="h-5 w-5 flex items-center justify-center text-xs font-bold">ID</div>
                   </a>
-                  {/* <a 
-                    href="https://scholar.google.com" 
+                  <a 
+                    href="https://scholar.google.com/citations?user=IV97v-wAAAAJ&hl=en" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-secondary hover:bg-primary/20 transition-colors"
                     aria-label="Google Scholar Profile"
                   >
                     <div className="h-5 w-5 flex items-center justify-center text-xs font-bold">GS</div>
-                  </a> */}
+                  </a>
                 </div>
               </div>
               
@@ -428,7 +431,7 @@ const Resume = () => {
               </div>
             </div>
             
-            <div className="mb-10">
+            {/* <div className="mb-10">
               <h2 className="text-2xl font-bold mb-6">Skills</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -457,9 +460,9 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
-            <div className="mb-10">
+            {/* <div className="mb-10">
               <h2 className="text-2xl font-bold mb-6">Awards</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -470,7 +473,7 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="mb-10">
               <h2 className="text-2xl font-bold mb-6">Selected Projects</h2>
@@ -514,7 +517,7 @@ const Resume = () => {
             </div>
 
             <div className="mb-10">
-              <h2 className="text-2xl font-bold mb-6">Volunteering</h2>
+              <h2 className="text-2xl font-bold mb-6">Reviewer</h2>
               
               <div className="space-y-4">
                 {volunteeringData.map((item, index) => (
@@ -547,7 +550,7 @@ const Resume = () => {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <h2 className="text-2xl font-bold mb-6">References</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -569,7 +572,7 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

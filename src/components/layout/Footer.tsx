@@ -15,37 +15,37 @@ export default function Footer() {
   const socialLinks: SocialLink[] = [
     {
       name: 'GitHub',
-      href: 'https://github.com/gourab21',
+      href: 'https://github.com/Bodhi1998',
       icon: <Github className="h-5 w-5" />
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/gourab21/',
+      href: 'https://www.linkedin.com/in/bodhisattwa-baidya/',
       icon: <Linkedin className="h-5 w-5" />
     },
     {
       name: 'X (Twitter)',
-      href: 'https://x.com/gourabdas21',
+      href: 'https://x.com/BodhisattwaBai2',
       icon: <Twitter className="h-5 w-5" />
     },
     {
       name: 'YouTube',
-      href: 'https://www.youtube.com/@gourabdas2128',
+      href: 'https://www.youtube.com/@bodhi27',
       icon: <YoutubeIcon className="h-5 w-5" />
     },
     {
       name: 'ORCID',
-      href: 'https://orcid.org/0009-0009-6804-7255',
+      href: 'https://orcid.org/0009-0002-3663-4497',
       icon: <div className="h-5 w-5 flex items-center justify-center text-xs font-bold">ID</div>
     },
-    // {
-    //   name: 'Google Scholar',
-    //   href: 'https://scholar.google.com',
-    //   icon: <div className="h-5 w-5 flex items-center justify-center text-xs font-bold">GS</div>
-    // },
+    {
+      name: 'Google Scholar',
+      href: 'https://scholar.google.com/citations?user=IV97v-wAAAAJ&hl=en',
+      icon: <div className="h-5 w-5 flex items-center justify-center text-xs font-bold">GS</div>
+    },
     {
       name: 'Email',
-      href: 'mailto:gourabdas2128@gmail.com',
+      href: 'mailto:bodhisattwabaidya@gmail.com',
       icon: <Mail className="h-5 w-5" />
     }
   ];

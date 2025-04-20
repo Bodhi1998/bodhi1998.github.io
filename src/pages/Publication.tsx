@@ -73,15 +73,74 @@ const Publication = () => {
     //   doi: "10.1121/ieee.2021.1121",
     //   link: "https://example.com/publication5"
     // },
+
     {
-      id: "1",
+      id: "7",
+      title: "Quantum Lattice: Securing UAV Swarms in the Post-Quantum Era.",
+      authors: "Bodhisattwa Baidya et al.",
+      venue: "2nd International Conference on Pervasive Computing Advances and Applications (PerCAA-2024),IET(Accepeted • 2024)",
+      year: "2025",
+      type: "conference",
+    },
+    {
+      id: "6",
+      title: "Agamographs using Rubiks Cubes : Morphing Images through Strategic Mosaic Arrangements",
+      authors: "Bodhisattwa Baidya et al",
+      venue: "22nd OITS International Conference on Information Technology (OCIT 2024).IEEE(Accepted • 2024)",
+      year: "2025",
+      type: "conference",
+
+    },
+
+    {
+      id: "5",
+      title: "Energy-Efficient UAV Path Planning using PSO-ABC algorithm in Obstacle-Rich Environments",
+      authors: "Bodhisattwa Baidya et al.",
+      venue: "22nd OITS International Conference on Information Technology (OCIT 2024).IEEE(Accepted • 2024)",
+      year: "2025",
+      type: "conference",
+
+    },
+
+    {
+      id: "4",
+      title: "Quantum-Resistant UAV System Using Lattice-Based Key Agreement Protocol",
+      authors: "Bodhisattwa Baidya et al.",
+      venue: "4th International Conference on Advances in Communication Technologies and Computer Engineering (ICACTCE’24), Springer(Accepted • 2024)",
+      year: "2025",
+      type: "conference"
+    },
+    {
+      id: "3",
+      title: "Quantum-Resistant Lattice-Based Cryptography for Secure UAV Communications",
+      authors: "Bodhisattwa Baidya, Atanu Mondal",
+      venue: "SSWC2024: International Conference on Smart Systems and Wireless Communication",
+      year: "2025",
+      type: "conference",
+      link: "https://link.springer.com/chapter/10.1007/978-981-96-1348-9_38",
+      doi: "10.1007/978-981-96-1348-9_38"
+    },
+    {
+      id: "2",
       title: "Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering",
       authors: "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Bodhisattwa Baidya, Anirban Santra, Arkaprava Chakraborty",
       venue: "The 2024 Sixth Doctoral Symposium on Intelligence Enabled Research (DoSIER 2024)",
       year: "2024",
       type: "conference",
       link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
-    }
+    },
+    
+    {
+      id: "1",
+      title: "An Efficient Path Selection in Software Defined UAV Network",
+      authors: "Bodhisattwa Baidya, Binu P.K.",
+      venue: "2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+      year: "2023",
+      type: "conference",
+      link: "https://ieeexplore.ieee.org/abstract/document/10307901",
+      doi: "10.1109/ICCCNT56998.2023.10307901"
+    },
+    
   ];
   
   const publicationTypes = [
@@ -91,9 +150,15 @@ const Publication = () => {
     { id: 'chapter', label: 'Book Chapters' }
   ];
   
+ // Sort publications by ID in descending order
+ const sortedPublications = [...publicationsData].sort((a, b) => 
+  parseInt(b.id) - parseInt(a.id)
+);
+
   const filteredPublications = filter
-    ? publicationsData.filter(pub => pub.type === filter)
-    : publicationsData;
+  ?sortedPublications.filter(pub => pub.type === filter)
+  : sortedPublications;
+  
   
   return (
     <div className="page-transition-wrapper animate-page-in min-h-screen flex flex-col">

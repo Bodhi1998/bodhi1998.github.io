@@ -7,7 +7,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Achievement = () => {
   useEffect(() => {
-    document.title = "Bodhisattwa | Achievement";
+    document.title = "Bodhisattwa | Reviewer";
   }, []);
 
   // Sample achievement data
@@ -15,11 +15,11 @@ const Achievement = () => {
 
     {
       id: "99",
-      title: "Junior Research Fellowship (JRF) - UGC NET December 2024",
-      company: "University Grants Commission (UGC)",
-      period: "February 2025",
-      description: "Awarded Junior Research Fellowship (JRF) & Qualified for Assistant Professor in UGC NET December 2024.",
-      link: "https://drive.google.com/file/d/1ClMqzNc7ybJfEdNGWo0Ca3mQrNV2ir2x/view?usp=drive_link"
+      title: "EncryptFlow: Efficient and Lossless Image Encryption Network Based on Normalizing Flows",
+      company: "IEEE Transactions on Artificial Intelligence",
+      period: "April 2025",
+      description: "Reviewed a research paper for the IEEE Transactions on Artificial Intelligence journal.",
+      link: "https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence"
     },
     {
       id: "100",
@@ -71,7 +71,7 @@ const Achievement = () => {
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">Achievements</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-2">Reviewer</h1>
             <div className="h-1 w-20 bg-primary mb-8"></div>
             
             <ScrollArea className="w-full overflow-x-auto">

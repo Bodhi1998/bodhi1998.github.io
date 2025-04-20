@@ -33,10 +33,16 @@ const Index = () => {
   }, []);
   
   const roles = [
-    "Post Graduate Researcher",
-    "Web Developer",
-    "Problem Solver",
-    "Open Source Contributor",
+    "PhD Scholar",
+    "Researcher",
+    "AI Enthusiast",
+    "Cyptrography Researcher",
+    "Drone Security Expert",
+    "Machine Learning Engineer",
+    "Deep Learning Specialist",
+    "Review Editor",
+    "IEEE CTSoc Member",
+    
   ];
   
   return (
