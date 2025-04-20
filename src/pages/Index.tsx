@@ -86,9 +86,10 @@ const Index = () => {
                   </div>
                   
                   <p className="text-foreground/70 max-w-lg">
-                  <b>UGC NET JRF and Assistant Professor Qualified</b> Post  Graduate Student with expertise in <b>Machine Learning, IoT, UAV Security and AI</b>. 
-                  Passionate about solving real-world problems through research and technology. <b>2x Winner Coding Contests</b> at prestigious institutions.
-                  Focused on <b>AI-driven security solutions</b> and machine Learning for a better Society.
+                  I am a PhD scholar at Ramakrishna Mission Vidyamandira, specializing in UAV security, authentication, and secure path planning. A member of the IEEE CTSoc Machine Learning, Deep Learning, and AI in CE (MDA) Technical Committee, their research bridges advanced AI techniques with cutting-edge UAV applications to enhance safety, efficiency, and resilience in autonomous systems.
+
+
+
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 mt-4">
