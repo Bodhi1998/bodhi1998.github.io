@@ -13,9 +13,9 @@ export interface NewsItem {
 export const newsData: NewsItem[] = [
   {
     id: "news-99",
-    title: "Conference paper published in 22nd OCIT 2024",
+    title: "Conference paper published in 22nd OCIT 2024,SRM University AP",
     date: "2025-04-29",
-    summary: "Our research team's paper has been officially published in the IEEE Xplore digital library",
+    summary: "Energy-Efficient UAV Path Planning Using PSO-ABC Algorithm in Obstacle-Rich Environments",
     content: "We're pleased to announce that our latest research paper has been published in IEEE Xplore following its successful presentation at the 22nd OITS International Conference on Information Technology (OCIT 2024). This publication represents both recognition of our team's innovative approach and adds to our institution's growing research portfolio. The paper addresses key challenges in the field of complex UAV Path Planning and proposes novel  ABC-PSO Hybrid solutions that have potential applications across multiple domains. Congratulations to all team members who contributed to this achievement.",
     category: "achievement",
     link: "https://ieeexplore.ieee.org/abstract/document/10973692",
@@ -30,12 +30,12 @@ export const newsData: NewsItem[] = [
   },
   {
     id: "news-101",
-    title: "Qualified JRF & Assistant Professor in UGC NET DEC-2024",
-    date: "2025-03-15",
-    summary: "Qualified UGC NET DEC-2024 for JRF and Assistant Professor.",
-    content: "Percentile - 99.8707644. \n I am pleased to announce that I have successfully qualified the UGC NET DEC-2024 examination for both Junior Research Fellowship (JRF) and Assistant Professor positions. This achievement reflects my dedication to academic excellence and research in the field of Computer Science. I acknowledge the support of my mentors and peers throughout this journey. I look forward to contributing to the academic community and pursuing further research opportunities. ",
+    title: "Conference Paper Published in SSWC 2024,JIS College of Engineering",
+    date: "2025-04-18",
+    summary: "Quantum-Resistant Lattice-Based Cryptography for UAV Networks",
+    content: "Quantum-Resistant Lattice-Based Cryptography, designed especially for secure communication in networks of Unmanned Aerial Vehicles (UAVs). The integrity and security of data must be guaranteed since UAVs are becoming increasingly prevalent in both military and civilian applications. Quantum computing poses an immediate challenge to traditional cryptography. The proposed Quantum-Resistant Lattice-Based Cryptography architecture guarantees secure communication with little computational expense over previous works by using the resilience of lattice-based encryption against quantum assaults. The proposed work also provides the groundwork for trustworthy communication among UAVs via the use of encryption and lattice-based key exchange protocols by optimizing cryptographic processes while addressing UAV network restrictions. Finally, thorough assessments confirm the present work’s effectiveness, guaranteeing stakeholders safe and essential UAV operations. ",
     category: "achievement",
-    link: "https://drive.google.com/file/d/1ClMqzNc7ybJfEdNGWo0Ca3mQrNV2ir2x/view?usp=sharing"
+    link: "https://link.springer.com/chapter/10.1007/978-981-96-1348-9_38"
   },
   {
     id: "news-102",
