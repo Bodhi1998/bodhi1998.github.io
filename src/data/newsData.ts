@@ -13,11 +13,12 @@ export interface NewsItem {
 export const newsData: NewsItem[] = [
   {
     id: "news-99",
-    title: "Selected for Indian Academy of Sciences - Summer Research Fellowship 2025",
-    date: "2025-04-10",
-    summary: "Got an offer letter from Indian Academy of Sciences for Summer Research Fellowship 2025 to work with Dr. C Pavan Kumar, IIIT Dharwad.",
-    content: "I am thrilled to announce that I have been selected for the prestigious Summer Research Fellowship 2025 by the Indian Academy of Sciences. I will be working under the guidance of Dr. C Pavan Kumar at IIIT Dharwad. This opportunity will allow me to delve deeper into my research interests and contribute to the field of Computer Science. I am grateful for the support of my mentors and peers throughout this journey. Since I am a M.Sc student and actively looking PhD opportunities after my Masters hence I am looking forward to this opportunity to gain valuable research experience and insights. I am excited about the potential collaborations and learning experiences that lie ahead.",
+    title: "Conference paper published in 22nd OCIT 2024",
+    date: "2025-04-29",
+    summary: "Our research team's paper has been officially published in the IEEE Xplore digital library",
+    content: "We're pleased to announce that our latest research paper has been published in IEEE Xplore following its successful presentation at the 22nd OITS International Conference on Information Technology (OCIT 2024). This publication represents both recognition of our team's innovative approach and adds to our institution's growing research portfolio. The paper addresses key challenges in the field of complex UAV Path Planning and proposes novel  ABC-PSO Hybrid solutions that have potential applications across multiple domains. Congratulations to all team members who contributed to this achievement.",
     category: "achievement",
+    link: "https://ieeexplore.ieee.org/abstract/document/10973692",
   },
   {
     id: "news-100",
