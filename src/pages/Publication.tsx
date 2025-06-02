@@ -125,7 +125,7 @@ const Publication = () => {
     {
       id: "2",
       title: "Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering",
-      authors: "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Bodhisattwa Baidya, Anirban Santra, Arkaprava Chakraborty",
+      authors: "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Anirban Santra, Arkaprava Chakraborty",
       venue: "The 2024 Sixth Doctoral Symposium on Intelligence Enabled Research (DoSIER 2024)",
       year: "2024",
       type: "conference",
