@@ -99,6 +99,8 @@ const Publication = () => {
       venue: "22nd OITS International Conference on Information Technology (OCIT 2024).IEEE(Accepted • 2024)",
       year: "2025",
       type: "conference",
+      link:"https://ieeexplore.ieee.org/abstract/document/10973692",
+      doi: "10.1109/OCIT65031.2024.00043"
 
     },
 
