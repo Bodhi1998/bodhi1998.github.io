@@ -73,7 +73,16 @@ const Publication = () => {
     //   doi: "10.1121/ieee.2021.1121",
     //   link: "https://example.com/publication5"
     // },
+    { id: "8",
+      title :"Cutting-Edge Innovations: The Future of AGI Drones in Climate Change",
+      authors: "Bodhisattwa Baidya, Atanu Mondal",
+      venue:"Artificial General Intelligence-Based Drones for Climate Change",
+      year: "2025",
+      type: "chapter",
+      link: "https://www.igi-global.com/chapter/cutting-edge-innovations/377195",
+      doi: "10.4018/979-8-3693-6457-4.ch011"
 
+    },
     {
       id: "7",
       title: "Quantum Lattice: Securing UAV Swarms in the Post-Quantum Era.",
