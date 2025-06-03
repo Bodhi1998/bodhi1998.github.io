@@ -77,26 +77,30 @@ const Publication = () => {
     {
       id: "7",
       title: "Quantum Lattice: Securing UAV Swarms in the Post-Quantum Era.",
-      authors: "Bodhisattwa Baidya et al.",
-      venue: "2nd International Conference on Pervasive Computing Advances and Applications (PerCAA-2024),IET(Accepeted • 2024)",
+      authors: "Bodhisattwa Baidya, Atanu Mondal, Sheela Hundekari, Inam Ullah Khan, Prajwalasimha S. N, Keshav Kaushik",
+      venue: "2nd International Conference on Pervasive Computing Advances and Applications (PerCAA-2024), IET ",
       year: "2025",
       type: "conference",
+      link :"https://digital-library.theiet.org/doi/10.1049/icp.2025.0766",
+      doi :"10.1049/icp.2025.0766"
     },
     {
       id: "6",
       title: "Agamographs using Rubiks Cubes : Morphing Images through Strategic Mosaic Arrangements",
-      authors: "Bodhisattwa Baidya et al",
-      venue: "22nd OITS International Conference on Information Technology (OCIT 2024).IEEE(Accepted • 2024)",
+      authors: "Arkopal Das, Sarbajit Manna, Bodhisattwa Baidya, Satish Anamalamudi",
+      venue: "22nd OITS International Conference on Information Technology (OCIT 2024). IEEE ",
       year: "2025",
       type: "conference",
+      link :"https://ieeexplore.ieee.org/abstract/document/10973731",
+      doi :"10.1109/OCIT65031.2024.00138"
 
     },
 
     {
       id: "5",
       title: "Energy-Efficient UAV Path Planning using PSO-ABC algorithm in Obstacle-Rich Environments",
-      authors: "Bodhisattwa Baidya et al.",
-      venue: "22nd OITS International Conference on Information Technology (OCIT 2024).IEEE(Accepted • 2024)",
+      authors: "Bodhisattwa Baidya, Atanu Mondal, Sankha Mallick, Satish Anamalamudi",
+      venue: "22nd OITS International Conference on Information Technology (OCIT 2024). IEEE ",
       year: "2025",
       type: "conference",
       link:"https://ieeexplore.ieee.org/abstract/document/10973692",
@@ -125,7 +129,7 @@ const Publication = () => {
     {
       id: "2",
       title: "Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering",
-      authors: "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Anirban Santra, Arkaprava Chakraborty",
+      authors: "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Gourab Das, Anirban Santra, Arkaprava Chakraborty",
       venue: "The 2024 Sixth Doctoral Symposium on Intelligence Enabled Research (DoSIER 2024)",
       year: "2024",
       type: "conference",
