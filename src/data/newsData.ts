@@ -5,7 +5,7 @@ export interface NewsItem {
   date: string;
   summary: string;
   content: string;
-  category: 'achievement' | 'publication' | 'submission' | 'career' | 'general';
+  category: 'achievement' | 'publication' | 'submission' | 'career' | 'general' | 'accepted';
   link?: string; // Added optional link field
 }
 
@@ -22,11 +22,11 @@ export const newsData: NewsItem[] = [
   },
   {
     id: "news-100",
-    title: "Submitted a research paper in CICBA 2025, Jadavpur University, India",
+    title: "Research paper accepted in CICBA 2025, Jadavpur University, India",
     date: "2025-03-31",
     summary: "Next-Gen Secure UAV: Leveraging Hyperelliptic Curves and Particle Swarm Optimization.",
     content: "This study proposes a lightweight cryptographic framework for UAV communication, integrating Hyperelliptic Curve Cryptography (HECC) and Particle Swarm Optimization (PSO). Using genus-2 curves over a 256-bit prime field, it enables secure Diffie-Hellman key exchange with AES encryption and SHA3-256. PSO optimizes key length, AES size, and rotation intervals, adapting to network conditions. A dynamic key rotation manager enhances resilience against attacks like MITM and brute-force. Results show improved entropy and security, offering an efficient solution for UAV-Ground Control Station communication.",
-    category: "submission"
+    category: "accepted",
   },
   {
     id: "news-101",
