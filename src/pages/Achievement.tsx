@@ -12,7 +12,34 @@ const Achievement = () => {
 
   // Sample achievement data
   const achievementData: TimelineItemData[] = [
+    
+    {
+      id: "3",
+      title: "Deepfake Dilemma: A Review of GAN-Based Detection for Facial Manipulations",
+      company: "Second International Conference on Advanced Network Technologies and Computational Intelligence (ICANTCI 2025)",
+      period: "May 2025",
+      description: "Reviewed a multiple research papers for the second International Conference on Advanced Network Technologies and Computational Intelligence (ICANTCI 2025).",
+      link: "https://drive.google.com/file/d/1kKoz_tiVfzZChGRcJ62IDGUPHQb7GLe9/view?usp=drive_link"
+    },
+    {
+      id: "4",
+      title: "Survey of Blockchain Solutions to Mitigate Drug Counterfeiting in Supply Chains: Building Digital Trust and Governance",
+      company: "Second International Conference on Advanced Network Technologies and Computational Intelligence (ICANTCI 2025)",
+      period: "May 2025",
+      description: "Reviewed a multiple research papers for the second International Conference on Advanced Network Technologies and Computational Intelligence (ICANTCI 2025).",
+      link: "https://ca.chitkara.edu.in/icantci2025/"
 
+    },
+    
+    
+    {
+      id: "5",
+      title: "Anomaly Based IDS for Rescue Operations Using IoT Network",
+      company: "Second International Conference on Advanced Network Technologies and Computational Intelligence (ICANTCI 2025)",
+      period: "May 2025",
+      description: "Reviewed multiple research papers for the Second International Conference on Advanced Network Technologies and Computational Intelligence (ICANTCI 2025).",
+      link: "https://ca.chitkara.edu.in/icantci2025/"
+    },
     {
       id: "99",
       title: "EncryptFlow: Efficient and Lossless Image Encryption Network Based on Normalizing Flows",
@@ -23,43 +50,43 @@ const Achievement = () => {
     },
     {
       id: "100",
-      title: "Winner - Codeplay @ Exabyte 2025",
-      company: "St. Xavier's College (Autonomous), Kolkata",
-      period: "February 2025",
-      description: "Secured 1st position in an Inter college Coding competition organized in their annual tech fest Exabyte 2025.",
-      link :"https://drive.google.com/file/d/1uoj8Zmj-ZCmJCYobYfvoGDF_bzzOP70t/view?usp=drive_link"
+      title: "Smart Skeletal Analysis for Elderly Exercise Assessment: a Human Factors Approach Based on Vivifrail Testing and Heart Rate Monitoring",
+      company: "2025 IEEE Gaming, Entertainment, and Media Conference (GEM)",
+      period: "March 2025",
+      description: "Reviewed a research paper for the 2025 IEEE Gaming, Entertainment, and Media Conference (GEM).",
+      link :"https://www.ieee-gem2025.org/"
     },
     {
       id: "101",
-      title: "Winner - The Turing Show @ Perceptron 2025",
-      company: "Ramakrishna Mission Vivekananda Educational and Research Institute",
-      period: "January 2025",
-      description: "Used problem solving skills & Secured 1st position in an Inter college Coding competition organized by RKMVERI in their annual tech fest Perceptron 2025.",
-      link: "https://drive.google.com/file/d/17zqZrezTnzsUqR2laGm5fpC-sz7ouE3i/view?usp=drive_link"
+      title: "Predicting Maneuver Decisions in Rear-End Collisions Using Situational Awareness-Based Features",
+      company: "2025 IEEE Gaming, Entertainment, and Media Conference (GEM)",
+      period: "March 2025",
+      description: "Reviewed a research paper for the 2025 IEEE Gaming, Entertainment, and Media Conference (GEM).",
+      link: "https://www.ieee-gem2025.org/"
     },
     {
       id: "102",
-      title: "Sanjeev Arora Memorial Prize",
-      company: "Atma Ram Sanatan Dharma College, University of Delhi",
-      period: "May 2024",
-      description: "For Excellence in Computer Science.",
-      link: "https://drive.google.com/file/d/1yOV94IvWaGP2_MXgcT-Kld1Qtkx8tBuG/view?usp=drive_link"
+      title: "Assessing Vibration Feedback Perceptibility in a Wearable Feedback System for Upper Back and Thigh Posture Correction",
+      company: "2025 IEEE Gaming, Entertainment, and Media Conference (GEM)",
+      period: "March 2025",
+      description: "Reviewed a research paper for the 2025 IEEE Gaming, Entertainment, and Media Conference (GEM).",
+      link: "https://www.ieee-gem2025.org/"
     },
     {
       id: "103",
-      title: "Meritorious Student Award 2023",
-      company: "Atma Ram Sanatan Dharma College, University of Delhi",
-      period: "May 2024",
-      description: "For Securing 1st Rank in the Department in Graduation.",
-      link: "https://drive.google.com/file/d/1M5qcZwk_cV_vt7GhDHcH_ZtJQHw0JQmF/view?usp=drive_link"
+      title: "Machine Learning-Based Classification of Umbilical Cord Blood Gas Using Fetal Heart Rate Variability",
+      company: "2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+      period: "March 2025",
+      description: "Reviewed a research paper for the 2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan).",
+      link: "https://www.icce-tw.org/"
     },
     {
       id: "104",
-      title: "Best Leadership Award 2019",
-      company: "Ramakrishna Mission Vidyapith, Deoghar",
-      period: "December 2019",
-      description: "For Outstanding Leadership in the Senior Secondary Section & co-ordinating various events.",
-      link: "https://drive.google.com/file/d/1DcWTBPH-82k4DYs4wpLvqZquASk14v0Z/view?usp=drive_link"
+      title: " Research on Feature Extraction for Prediction of Dystocia in Cows Using Image Processing Technology",
+      company: "2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+      period: "March 2025",
+      description: "Reviewed a research paper for the 2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan).",
+      link: "https://www.icce-tw.org/"
     }
      
   ];
