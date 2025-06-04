@@ -354,8 +354,9 @@ const Resume = () => {
               </div>
               
               <a 
-                href="/lovable-uploads/Bodhisattwa_Baidya_CV.pdf"
-                download="Bodhisattwa_Baidya_CV.pdf" 
+                href="/lovable-uploads/Bodhisattwa_Baidya_CV.pdf" 
+                download="Bodhisattwa_Baidya_CV.pdf"
+                aria-label="Download CV"
                 className="px-4 py-2 bg-primary text-primary-foreground rounded-md flex items-center gap-2 hover:bg-primary/90 transition-colors self-start mt-2 md:mt-0"
                 target="_blank"
                 rel="noopener noreferrer"
