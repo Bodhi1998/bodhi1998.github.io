@@ -197,19 +197,12 @@ const Resume = () => {
   
   const referencesData = [
     {
-      name: "Sarbajit Manna",
-      title: "Assistant Professor",
-      institution: "Ramakrishna Mission Vidyamandira",
-      email: "sarbajit.cs@vidyamandira.ac.in",
-      phone: "+91-94743 39952"
-    },
-    {
-      name: "Dr. Arindam Sarkar",
-      title: "Assistant Professor (HOD)",
-      institution: "Ramakrishna Mission Vidyamandira",
-      email: "arindamsarkar@vidyamandira.ac.in",
-      phone: "+91-98517 00660"
-    },
+      name: "Inam Ullah Khan",
+      title: "Postdoctoral Researcher",
+      institution: "Multimedia University, Malaysia",
+      email: "inamullahkhan@mmu.edu.my",
+      phone: " "
+    }
     
     
   ];
