@@ -12,13 +12,15 @@ import Footer from '@/components/layout/Footer';
 
 const News = () => {
   useEffect(() => {
-    document.title = "Bodhisattwa | News & Updates";
+    document.title = "Gourab | News & Updates";
   }, []);
 
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const sortedNews = [...newsData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
-  const filteredNews = selectedCategory 
+   // Sort by id descending (numeric comparison)
+   const sortedNews = [...newsData].sort((a, b) => Number(b.id) - Number(a.id)).reverse();
+ 
+   const filteredNews = selectedCategory
     ? sortedNews.filter(item => item.category === selectedCategory)
     : sortedNews;
 
@@ -109,7 +111,15 @@ const News = () => {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-foreground/70">{item.summary}</p>
+                    <p 
+                         className="text-foreground/70"
+                         dangerouslySetInnerHTML={{ 
+                           __html: item.summary.replace(
+                             /<a\s+href="([^"]*)"[^>]*>(.*?)<\/a>/g, 
+                             (match, url, text) => `<a href="${url}" target="_blank" rel="noopener noreferrer" class="font-bold text-secondary-purple hover:underline">${text}</a>`
+                           ) 
+                         }} 
+                       />
                       <div className="mt-4">
                         <Button variant="link" className="p-0 h-auto text-primary">
                           Read more <ChevronRight className="h-3 w-3 ml-1" />

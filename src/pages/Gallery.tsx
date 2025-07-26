@@ -7,10 +7,14 @@ import ImageGallery from '@/components/gallery/ImageGallery';
 
 const Gallery = () => {
   useEffect(() => {
-    document.title = "Portfolio | Gallery";
+    document.title = "Bodhisattwa | Gallery";
     window.scrollTo(0, 0);
   }, []);
 
+  // Sort gallery images by id in descending order (numeric)
+  const sortedGalleryImages = [...galleryImages].sort((a, b) => Number(b.id) - Number(a.id));
+
+  
   return (
     <div className="page-transition-wrapper min-h-screen flex flex-col">
       <Navbar />
@@ -27,7 +31,7 @@ const Gallery = () => {
               </p>
             </header>
             
-            <ImageGallery images={galleryImages} />
+            <ImageGallery images={sortedGalleryImages} />
           </div>
         </div>
       </main>

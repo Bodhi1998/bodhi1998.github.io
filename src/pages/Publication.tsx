@@ -1,21 +1,24 @@
-
 import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import { ExternalLink } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+
+// Import the scholar data from the JSON file
+import scholarData from './scholarData.json';
 
 interface Publication {
   id: string;
   title: string;
   authors: string;
-  venue: string;
-  year: string;
-  type: 'journal' | 'conference' | 'book' | 'chapter';
-  doi?: string;
-  link?: string;
+  citation: string;
+  year: number; // make year number type
+  type: 'journal' | 'conference' | 'poster' | 'chapter';
+  url?: string;
+  abstract?: string;
 }
-
-// You need to change in Resume for Publiccation Type also.............
 
 const Publication = () => {
   useEffect(() => {
@@ -24,157 +27,56 @@ const Publication = () => {
 
   const [filter, setFilter] = useState<string | null>(null);
 
-  // Sample publications data
-  const publicationsData: Publication[] = [
-    // {
-    //   id: "1",
-    //   title: "Advanced Techniques in Natural Language Processing for Social Media Analysis",
-    //   authors: "Doe, J., Smith, A., & Johnson, B.",
-    //   venue: "Journal of Computational Linguistics",
-    //   year: "2023",
-    //   type: "journal",
-    //   doi: "10.1234/jcl.2023.1234",
-    //   link: "https://example.com/publication1"
-    // },
-    // {
-    //   id: "2",
-    //   title: "A Novel Approach to Real-time Object Detection in Low-Resource Environments",
-    //   authors: "Doe, J., Williams, C., & Brown, D.",
-    //   venue: "International Conference on Computer Vision (ICCV)",
-    //   year: "2022",
-    //   type: "conference",
-    //   link: "https://example.com/publication2"
-    // },
-    // {
-    //   id: "3",
-    //   title: "Blockchain Technologies: Applications and Future Directions",
-    //   authors: "Garcia, E., Doe, J., & Lee, M.",
-    //   venue: "Springer Publishing",
-    //   year: "2022",
-    //   type: "book",
-    //   doi: "10.5678/sp.2022.5678"
-    // },
-    // {
-    //   id: "4",
-    //   title: "Privacy-Preserving Machine Learning: Methods and Applications",
-    //   authors: "Doe, J., Anderson, R.",
-    //   venue: "Handbook of Artificial Intelligence in Healthcare",
-    //   year: "2021",
-    //   type: "chapter",
-    //   doi: "10.9101/ai.2021.9101"
-    // },
-    // {
-    //   id: "5",
-    //   title: "Efficient Deep Learning Architectures for Edge Computing",
-    //   authors: "Doe, J., Singh, P., & Thomas, L.",
-    //   venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-    //   year: "2021",
-    //   type: "journal",
-    //   doi: "10.1121/ieee.2021.1121",
-    //   link: "https://example.com/publication5"
-    // },
-    { id: "8",
-      title :"Cutting-Edge Innovations: The Future of AGI Drones in Climate Change",
-      authors: "Bodhisattwa Baidya, Atanu Mondal",
-      venue:"Artificial General Intelligence-Based Drones for Climate Change",
-      year: "2025",
-      type: "chapter",
-      link: "https://www.igi-global.com/chapter/cutting-edge-innovations/377195",
-      doi: "10.4018/979-8-3693-6457-4.ch011"
+  // Map scholarData.recent_publications to match Publication interface
+  const publicationsData: Publication[] = scholarData.recent_publications.map((pub, index) => ({
+    id: (index + 1).toString(),
+    title: pub.title,
+    authors: pub.authors,
+    citation: pub.citation,
+    year: Number(pub.year), // ensure number type
+    type: pub.type as 'journal' | 'conference' | 'poster' | 'chapter',
+    url: pub.url !== "#" ? pub.url : undefined,
+    abstract: pub.abstract !== "Abstract not available" ? pub.abstract : undefined,
+  }));
 
-    },
-    {
-      id: "7",
-      title: "Quantum Lattice: Securing UAV Swarms in the Post-Quantum Era.",
-      authors: "Bodhisattwa Baidya, Atanu Mondal, Sheela Hundekari, Inam Ullah Khan, Prajwalasimha S. N, Keshav Kaushik",
-      venue: "2nd International Conference on Pervasive Computing Advances and Applications (PerCAA-2024), IET ",
-      year: "2025",
-      type: "conference",
-      link :"https://digital-library.theiet.org/doi/10.1049/icp.2025.0766",
-      doi :"10.1049/icp.2025.0766"
-    },
-    {
-      id: "6",
-      title: "Agamographs using Rubiks Cubes : Morphing Images through Strategic Mosaic Arrangements",
-      authors: "Arkopal Das, Sarbajit Manna, Bodhisattwa Baidya, Satish Anamalamudi",
-      venue: "22nd OITS International Conference on Information Technology (OCIT 2024). IEEE ",
-      year: "2025",
-      type: "conference",
-      link :"https://ieeexplore.ieee.org/abstract/document/10973731",
-      doi :"10.1109/OCIT65031.2024.00138"
+  // Sort publications by year descending (newest first)
+  const sortedPublications = [...publicationsData].sort((a, b) => b.year - a.year);
 
-    },
+  const filteredPublications = filter
+    ? sortedPublications.filter(pub => pub.type === filter)
+    : sortedPublications;
 
-    {
-      id: "5",
-      title: "Energy-Efficient UAV Path Planning using PSO-ABC algorithm in Obstacle-Rich Environments",
-      authors: "Bodhisattwa Baidya, Atanu Mondal, Sankha Mallick, Satish Anamalamudi",
-      venue: "22nd OITS International Conference on Information Technology (OCIT 2024). IEEE ",
-      year: "2025",
-      type: "conference",
-      link:"https://ieeexplore.ieee.org/abstract/document/10973692",
-      doi: "10.1109/OCIT65031.2024.00043"
-
-    },
-
-    {
-      id: "4",
-      title: "Quantum-Resistant UAV System Using Lattice-Based Key Agreement Protocol",
-      authors: "Bodhisattwa Baidya et al.",
-      venue: "4th International Conference on Advances in Communication Technologies and Computer Engineering (ICACTCE’24), Springer(Accepted • 2024)",
-      year: "2025",
-      type: "conference"
-    },
-    {
-      id: "3",
-      title: "Quantum-Resistant Lattice-Based Cryptography for Secure UAV Communications",
-      authors: "Bodhisattwa Baidya, Atanu Mondal",
-      venue: "SSWC2024: International Conference on Smart Systems and Wireless Communication",
-      year: "2025",
-      type: "conference",
-      link: "https://link.springer.com/chapter/10.1007/978-981-96-1348-9_38",
-      doi: "10.1007/978-981-96-1348-9_38"
-    },
-    {
-      id: "2",
-      title: "Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering",
-      authors: "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Gourab Das, Anirban Santra, Arkaprava Chakraborty",
-      venue: "The 2024 Sixth Doctoral Symposium on Intelligence Enabled Research (DoSIER 2024)",
-      year: "2024",
-      type: "conference",
-      link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
-    },
-    
-    {
-      id: "1",
-      title: "An Efficient Path Selection in Software Defined UAV Network",
-      authors: "Bodhisattwa Baidya, Binu P.K.",
-      venue: "2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
-      year: "2023",
-      type: "conference",
-      link: "https://ieeexplore.ieee.org/abstract/document/10307901",
-      doi: "10.1109/ICCCNT56998.2023.10307901"
-    },
-    
-  ];
-  
   const publicationTypes = [
     { id: 'journal', label: 'Journal Articles' },
     { id: 'conference', label: 'Conference Papers' },
-    { id: 'book', label: 'Books' },
-    { id: 'chapter', label: 'Book Chapters' }
+    { id: 'poster', label: 'Posters' },
+    { id: 'chapter', label: 'Book Chapters' },
   ];
-  
- // Sort publications by ID in descending order
- const sortedPublications = [...publicationsData].sort((a, b) => 
-  parseInt(b.id) - parseInt(a.id)
-);
 
-  const filteredPublications = filter
-  ?sortedPublications.filter(pub => pub.type === filter)
-  : sortedPublications;
-  
-  
+  // Define color classes for each type
+  const typeColors = {
+    journal: {
+      filterActive: 'bg-green-500 text-white',
+      filterInactive: 'bg-green-100 text-green-800 hover:bg-green-200 dark:bg-green-900 dark:text-green-200 dark:hover:bg-green-800',
+      label: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
+    },
+    conference: {
+      filterActive: 'bg-blue-500 text-white',
+      filterInactive: 'bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-200 dark:hover:bg-blue-800',
+      label: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
+    },
+    poster: {
+      filterActive: 'bg-purple-500 text-white',
+      filterInactive: 'bg-purple-100 text-purple-800 hover:bg-purple-200 dark:bg-purple-900 dark:text-purple-200 dark:hover:bg-purple-800',
+      label: 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200',
+    },
+    chapter: {
+      filterActive: 'bg-orange-500 text-white',
+      filterInactive: 'bg-orange-100 text-orange-800 hover:bg-orange-200 dark:bg-orange-900 dark:text-orange-200 dark:hover:bg-orange-800',
+      label: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200',
+    },
+  };
+
   return (
     <div className="page-transition-wrapper animate-page-in min-h-screen flex flex-col">
       <Navbar />
@@ -192,8 +94,8 @@ const Publication = () => {
                   onClick={() => setFilter(null)}
                   className={`px-3 py-1 rounded-full text-sm transition-colors ${
                     filter === null
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-secondary hover:bg-secondary/80 text-foreground/80"
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-secondary hover:bg-secondary/80 text-foreground/80'
                   }`}
                 >
                   All Publications
@@ -202,11 +104,11 @@ const Publication = () => {
                 {publicationTypes.map((type) => (
                   <button
                     key={type.id}
-                    onClick={() => setFilter(type.id as 'journal' | 'conference' | 'book' | 'chapter')}
+                    onClick={() => setFilter(type.id as 'journal' | 'conference' | 'poster' | 'chapter')}
                     className={`px-3 py-1 rounded-full text-sm transition-colors ${
                       filter === type.id
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-secondary hover:bg-secondary/80 text-foreground/80"
+                        ? typeColors[type.id as keyof typeof typeColors].filterActive
+                        : typeColors[type.id as keyof typeof typeColors].filterInactive
                     }`}
                   >
                     {type.label}
@@ -216,54 +118,62 @@ const Publication = () => {
             </div>
             
             {/* Publications list */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               {filteredPublications.map((pub) => (
-                <div key={pub.id} className="glass-panel p-5 rounded-lg">
-                  <h3 className="text-lg font-medium mb-2">{pub.title}</h3>
-                  <p className="text-primary/90 text-sm mb-1">{pub.authors}</p>
-                  <p className="text-foreground/70 text-sm mb-1">
-                    <span className="font-medium">{pub.venue}</span>, {pub.year}
-                  </p>
-                  <div className="flex mt-3 items-center gap-3">
-                    <span 
-                      className={cn(
-                        "text-xs px-2 py-1 rounded-full",
-                        pub.type === 'journal' ? "bg-primary/20 text-primary" :
-                        pub.type === 'conference' ? "bg-secondary text-foreground/90" :
-                        pub.type === 'book' ? "bg-muted text-foreground/70" :
-                        "bg-primary/10 text-primary/80"
-                      )}
-                    >
-                      {
-                        pub.type === 'journal' ? 'Journal Article' :
-                        pub.type === 'conference' ? 'Conference Paper' :
-                        pub.type === 'book' ? 'Book' : 'Book Chapter'
-                      }
-                    </span>
+                <Card key={pub.id} className="overflow-hidden transition-all hover:shadow-md">
+                  <CardContent className="p-5">
+                    <div className="flex justify-between items-start">
+                      <h3 className="text-lg font-semibold mb-1 text-foreground flex-1">{pub.title}</h3>
+                      <div className="flex items-center gap-2">
+                        <span className={cn(
+                          "text-xs font-bold px-2 py-1 rounded-full",
+                          typeColors[pub.type as keyof typeof typeColors].label
+                        )}>
+                          {pub.type.charAt(0).toUpperCase() + pub.type.slice(1)}
+                        </span>
+                        <span className={cn(
+                          "text-xs font-bold px-2 py-1 rounded-full bg-primary/5 text-primary whitespace-nowrap",
+                        )}>
+                          {pub.year}
+                        </span>
+                      </div>
+                    </div>
                     
-                    {pub.doi && (
-                      <a 
-                        href={`https://doi.org/${pub.doi}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-primary/80 hover:text-primary transition-colors"
-                      >
-                        DOI: {pub.doi}
-                      </a>
+                    <p className="text-sm text-primary/100 mb-2">{pub.authors}</p>
+                    <p className="text-sm text-foreground/90 mb-3 italic">{pub.citation}</p>
+                    
+                    {pub.abstract && (
+                      <div className="mb-3">
+                        <details className="text-sm">
+                          <summary className="cursor-pointer text-primary hover:text-primary/80 transition-colors">
+                            Abstract
+                          </summary>
+                          <p className="mt-2 text-xs text-foreground/70 bg-secondary/10 p-3 rounded">
+                            {pub.abstract}
+                          </p>
+                        </details>
+                      </div>
                     )}
                     
-                    {pub.link && (
-                      <a 
-                        href={pub.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-primary/80 hover:text-primary transition-colors"
+                    {pub.url && (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex items-center gap-2"
+                        asChild
                       >
-                        View Publication
-                      </a>
+                        <a 
+                          href={pub.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          View Publication
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </Button>
                     )}
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               ))}
               
               {filteredPublications.length === 0 && (

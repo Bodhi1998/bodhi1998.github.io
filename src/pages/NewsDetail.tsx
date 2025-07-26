@@ -16,11 +16,22 @@ const NewsDetail = () => {
 
   useEffect(() => {
     if (newsItem) {
-      document.title = `Bodhisattwa | ${newsItem.title}`;
+      document.title = `Gourab | ${newsItem.title}`;
     } else {
-      document.title = "Bodhisattwa | News Not Found";
+      document.title = "Gourab | News Not Found";
     }
   }, [newsItem]);
+
+    // Function to convert newlines to <br> tags
+  const formatTextWithLineBreaks = (text: string) => {
+    return text.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        {index < text.split('\n').length - 1 && <br />}
+      </React.Fragment>
+    ));
+  };
+
 
   if (!newsItem) {
     return (
@@ -92,11 +103,12 @@ const NewsDetail = () => {
             </div>
             
             <div className="glass-panel p-6 rounded-lg mb-8">
-              <p className="text-lg font-medium mb-4">{newsItem.summary}</p>
+            <p 
+                 className="text-lg font-medium mb-4"
+                 dangerouslySetInnerHTML={{ __html: newsItem.summary }}
+               />
               <div className="prose dark:prose-invert max-w-none">
-              {newsItem.content.split('\n').map((line, idx) => (
-                <p key={idx} className="mb-2">{line}</p>
-              ))}
+                {formatTextWithLineBreaks(newsItem.content)}
               </div>
               
               {newsItem.link && (

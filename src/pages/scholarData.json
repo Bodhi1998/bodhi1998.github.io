@@ -1,0 +1,102 @@
+{
+    "citations": 125,
+    "h_index": 0,
+    "publications": 1,
+    "last_updated": "2025-05-04 19:17:47",
+    "recent_publications": [
+      {
+        "title": "Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering",
+        "year": 2024,
+        "citation": "Proceedings of the Sixth Doctoral Symposium on Intelligence Enabled Research, Sukanta Mahavidyalaya, Dhupguri, India, 2025",
+        "abstract": "This research introduces a sophisticated method for UAV tracking utilizing multi-sensor fusion and Extended Kalman Filter (EKF) techniques. We model a sophisticated 3D UAV trajectory alongside diverse sensor information, encompassing RF signal strength, radar range and velocity, audio signals, and optical location data. The EKF technique is employed to estimate the drone’s position and velocity, exhibiting enhanced tracking precision relative to individual sensor observations. The simulation integrates variable noise levels and adaptive estimation of measurement noise covariance to improve the resilience of the EKF. Real-time visualization of sensor data and EKF estimates facilitates instant evaluation of the algorithm’s efficacy. The results indicate that the EKF efficiently eliminates sensor noise, yielding a more refined and precise trajectory estimation. The analysis of sensor data indicates the average signal strengths and standard deviations for each sensor category. The EKF exhibits a 12.5% enhancement in tracking accuracy relative to unprocessed optical sensor data, with mean tracking errors of 0.07 m for the EKF compared to 0.08 m for the optical sensor independently. This study emphasizes the efficacy of multi-sensor fusion and EKF implementation in improving drone tracking capabilities across diverse applications, such as surveillance, search and rescue, and air traffic management.",
+        "url": "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html",
+        "authors": "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Gourab Das, Anirban Santra, Arkaprava Chakraborty",
+        "type":"conference"
+      },
+      {
+  "title": "Cutting‑Edge Innovations: The Future of AGI Drones in Climate Change",
+  "year": 2025,
+  "citation": "Artificial General Intelligence-Based Drones for Climate Change (Chapter 11), IGI Global, 2025",
+  "abstract": "This chapter explores the cutting-edge integration of Artificial General Intelligence (AGI) powered drones with Software-Defined Networking (SDN), quantum computing, edge computing, LIDAR technology, and satellite systems for advanced climate change monitoring and mitigation. We present a comprehensive framework for long-term autonomous monitoring that leverages these technologies to revolutionize environmental data collection, analysis, and response strategies. The chapter discusses the synergistic potential of AGI drones equipped with LIDAR, connected through SDN architectures, and supported by quantum and edge computing capabilities. We examine how these systems can interact with Low Earth Orbit (LEO) and Geostationary Earth Orbit (GEO) satellites to create a global, real-time environmental monitoring network. Through detailed case studies, methodologies, and algorithms, we illustrate the transformative impact of this integrated approach on climate change research and mitigation efforts.",
+  "url": "https://www.igi-global.com/chapter/cutting-edge-innovations/377195",
+  "authors": "Bodhisattwa Baidya, Atanu Mondal",
+  "type": "chapter"
+},
+{
+  "title": "Quantum Lattice: Securing UAV Swarms in the Post-Quantum Era",
+  "year": 2024,
+  "citation": "2nd International Conference on Pervasive Computing Advances and Applications (PerCAA‑2024), IET, 2025",
+  "abstract": "This study presents Quantum Lattice an innovative theoretical framework designed to ensure the security of Unmanned Aerial Vehicle (UAV) swarm communications in the era after quantum computing. Given the risk posed by quantum computing to conventional cryptography techniques, it is imperative to develop security solutions that are immune to quantum attacks specifically designed for UAV systems. Utilizing sophisticated lattice-based encryption, we employ the Short Integer Solution (SIS) problem and a novel Aerial Lattice Traversal (ALT) algorithm to provide strong security while preserving real-time performance essential for UAV operations. Simulations performed on a testbed which incorporates quantum technology show substantial enhancements compared to conventional approaches. These benefits include a 42% decrease in latency, a 28% increase in throughput, a 63% reduction in packet loss, and a 37% decrease in energy consumption, especially in dense swarm setups with up to 1000 nodes. The mathematical principles that underlie our approach, including δ--ary lattices and their cryptographic applications, are thoroughly discussed. In addition, the study investigates the incorporation of our framework with developing technologies like neuromorphic computing and AI-powered adaptive security mechanisms. In the quantum computing era, our results provide a foundation for secure, scalable, and robust UAV swarm operations, effectively tackling significant issues in both civilian and military contexts.",
+  "url": "https://digital-library.theiet.org/doi/10.1049/icp.2025.0766",
+  "authors": "Bodhisattwa Baidya, Atanu Mondal, Sheela Hundekari, Inam Ullah Khan, Prajwalasimha S. N, Keshav Kaushik",
+  "type": "conference"
+},
+{
+  "title": "Agamographs using Rubiks Cubes : Morphing Images through Strategic Mosaic Arrangements",
+  "year": 2024,
+  "citation": "22nd OITS International Conference on Information Technology (OCIT 2024), IEEE, 2025",
+  "abstract": "This paper introduces a mathematical technique for creating dynamic artworks using Rubik's cubes. By strategically arranging two images on Rubik's cubes in segmented patterns, the resulting artwork presents a captivating illusion of morphing two images when observed from different viewpoints. As viewers move around the artwork, the images seem to shift and transform, creating an engaging visual experience. The core of this approach lies in an algorithmic process that generates mosaics representing two images on Rubik's cubes, which are then seamlessly combined to form a unified artwork. The final result is presented in a simulated 3D environment, enhancing its immersive quality. The 3D GUI environment not only provides users with a set of controls to rotate and zoom the structure but also provides an FPS log to show how many frames are being generated per second and how much the programming is lagging. The paper provides a comprehensive description of the strategy employed to achieve this artistic effect, detailing the step-by-step process from image segmentation to mosaic generation and merging along with the constraints and required mathematical preliminaries. Additionally, the paper undertakes the time complexity analysis of the algorithm, which is in linear order, which guarantees the efficiency and computational requirements.",
+  "url": "https://ieeexplore.ieee.org/abstract/document/10973731",
+  "authors": "Arkopal Das, Sarbajit Manna, Bodhisattwa Baidya, Satish Anamalamudi",
+  "type": "conference"
+},
+{
+  "title": "Energy‑Efficient UAV Path Planning using PSO‑ABC algorithm in Obstacle‑Rich Environments",
+  "year": 2024,
+  "citation": "22nd OITS International Conference on Information Technology (OCIT 2024), IEEE, 2025",
+  "abstract": "A unique hybrid approach for energy-efficient path planning in two-dimensional landscapes with obstacles is presented in this article, combining Artificial Bee Colony (ABC) along with Particle Swarm Optimisation (PSO). Path planning is a critical challenge in robotics, autonomous vehicles, and various other fields. While numerous algorithms exist, many struggle to balance computational efficiency, solution quality, and energy considerations. In order to overcome these obstacles, We constructed a hybrid PSO-ABC algorithm that combines the benefits of PSO's global search capabilities with ABC's local search strengths. The algorithm optimizes paths considering multiple objectives: path length, obstacle avoidance, and energy consumption. We represent paths using a series of handle points, employing spline interpolation for smooth trajectories. The al-gorithm initializes solutions using both random and straight-line approaches, then iteratively improves them through particle up-dates and bee phases. We introduce an adaptive inertia weight for PSO and incorporate energy consumption into the cost function. Experimental results demonstrate the algorithm's effectiveness in finding feasible, energy-efficient paths in environments with randomly placed circular obstacles. The hybrid approach shows improved convergence compared to standalone PSO or ABC algorithms. Furthermore, the inclusion of energy considerations in path optimization presents a more realistic model for real-world applications. This research enriches the field of intelligent path planning by providing a stable, energy-conscious algorithm that works well in challenging settings.",
+  "url": "https://ieeexplore.ieee.org/abstract/document/10973692",
+  "authors": "Bodhisattwa Baidya, Atanu Mondal, Sankha Mallick, Satish Anamalamudi",
+  "type": "conference"
+},
+{
+  "title": "Quantum-Resistant UAV System Using Lattice-Based Key Agreement Protocol",
+  "year": 2024,
+  "citation": "4th International Conference on Advances in Communication Technologies and Computer Engineering (ICACTCE’24), Springer, 2025",
+  "abstract": "In coming days, keeping data and information secure … Elliptic Curve Diffie Hellman (ECDH) encryption and lattice‑based methods such as Ring‑LWE and NTRU are used to generate and agree quantum‑resistant keys for UAV communication. The methodology, integrated with blockchain for key exchange, provides secure UAV communication and data privacy, supported by thorough security analysis and protocol comparison results.",
+  "url": "https://link.springer.com/chapter/10.1007/978-3-031-94620-2_17",
+  "authors": "Bodhisattwa Baidya et al.",
+  "type": "conference"
+},
+{
+  "title": "Quantum-Resistant Lattice-Based Cryptography for Secure UAV Communications",
+  "year": 2024,
+  "citation": "SSWC2024: International Conference on Smart Systems and Wireless Communication, 2025",
+  "abstract": "Quantum‑Resistant Lattice‑Based Cryptography, designed especially for secure communication in networks of Unmanned Aerial Vehicles (UAVs). The architecture guarantees secure communication with little computational expense by leveraging lattice‑based encryption resilience against quantum attacks. The proposed work uses encryption and lattice‑based key exchange protocols optimized for UAV network constraints, providing a foundation for trustworthy UAV operations. Rigorous assessments confirm its effectiveness for essential UAV communication.",
+  "url": "https://link.springer.com/chapter/10.1007/978-981-96-1348-9_38",
+  "authors": "Bodhisattwa Baidya, Atanu Mondal",
+  "type": "conference"
+},
+{
+  "title": "Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering",
+  "year": 2024,
+  "citation": "The 2024 Sixth Doctoral Symposium on Intelligence Enabled Research (DoSIER 2024), 2024",
+  "abstract": "This research introduces a sophisticated method for UAV tracking utilizing multi‑sensor fusion and Extended Kalman Filter (EKF) techniques. We model a 3D UAV trajectory with diverse sensor inputs—RF signal strength, radar range/velocity, audio, and optical data. The EKF estimates position and velocity with enhanced precision, showing a 12.5% improvement over raw optical sensor data. Mean tracking errors are 0.07 m for the EKF versus 0.08 m for the optical sensor. Real‑time visualization and adaptive noise estimation improve resilience and trajectory accuracy across varied applications.",
+  "url": "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html",
+  "authors": "Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Gourab Das, Anirban Santra, Arkaprava Chakraborty",
+  "type": "conference"
+},
+{
+  "title": "An Efficient Path Selection in Software Defined UAV Network",
+  "year": 2023,
+  "citation": "2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT), IEEE, 2023",
+  "abstract": "This paper proposes a path‑selection algorithm within a software‑defined UAV network. It leverages the OpenFlow and STP protocols to optimize path choice based on delay, throughput, and link quality metrics. Implemented in the OMNeT++ simulation environment, the results show reduced latency and improved throughput for UAV communications.",
+  "url": "https://ieeexplore.ieee.org/abstract/document/10307901",
+  "authors": "Bodhisattwa Baidya, Binu P.K.",
+  "type": "conference"
+}
+
+
+
+
+
+
+
+
+
+
+      
+      
+    ]
+  }
+  

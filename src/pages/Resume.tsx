@@ -11,12 +11,13 @@ const Resume = () => {
   }, []);
 
   const fieldsOfInterest = [
+    "AI",
+    "Cryptography",
+    "Drone Security",
     "Machine Learning",
+    "Deep Learning",
     "UAV Security",
     "Internet of Things (IoT)",
-    "Artificial Intelligence",
-    "Web Development",
-    "Frontend Architecture"
   ];
 
   const experienceData: TimelineItemData[] = [
@@ -87,7 +88,6 @@ const Resume = () => {
       period: "2017 - 2020",
       description: "Percentage - 61.58 %"
     },
-    
   ];
 
   const publicationsData = [
@@ -97,6 +97,7 @@ const Resume = () => {
     //   year: "2022",
     //   link: "#"
     // },
+    
     {
       title: " An Efficient Path Selection in Software Defined UAV Network.",
       conference: "14th International Conference on Computing Communication and Networking Technologies (ICCCNT)",
@@ -133,42 +134,16 @@ const Resume = () => {
       year: "2024",
       link: "https://dblp.org/rec/conf/dosier/BaidyaMMDSC24.html"
     },
-    // ,
-    // {
-    //   title: "The Future of Web Development: Trends and Predictions",
-    //   book: "Web Development: Next Generation Technologies",
-    //   year: "2020",
-    //   link: "#"
-    // }
     
   ];
 
   const awardsData = [
     {
-      title: "JRF - UGC NET DEC-24.",
-      organization: "University Grants Commission (UGC).",
+      title: "Confererence Grant",
+      organization: "Ramakrishna Mission Vidyamandira",
       year: "Mar 2025"
     },
-    {
-      title: "Winner - Codeplay, Coding Competition, SXC Kolkata",
-      organization: "St. Xavier's College (Autonomous), Kolkata",
-      year: "Feb 2025"
-    },
-    {
-      title: "Winner - The Turing Show, Coding Competition",
-      organization: "Ramakrishna Mission Vivekananda Educational and Research Institute",
-      year: "Jan 2025"
-    },
-    {
-      title: "Sanjeev Arora Memorial Prize",
-      organization: "Atma Ram Sanatan Dharma College",
-      year: "May 2024"
-    },
-    {
-      title: "Meritorious Student Award 2023",
-      organization: "Atma Ram Sanatan Dharma College",
-      year: "May 2024"
-    }
+   
   ];
 
   const projectsData = [
@@ -193,78 +168,51 @@ const Resume = () => {
     {
       role: "Regular (Lifetime) Member",
       organization: "The International Society for Applied Computing (ISAC).",
-      period: "2025 - Persent",
+      period: "2025 - Present",
       description: ""
     },
+    
+  ];
+
+  const skillCategories = [
     {
-      role: "Member",
-      organization: "International Association of Engineers (IAENG).",
-      period: "2024 - Persent",
-      description: ""
+      "name": "Programming Languages",
+      "skills": ["Python", "C++", "MATLAB", "HTML5", "CSS3", "Assembly Language","JavaScript"]
     },
     {
-      role: "Public Relations (PR) Head",
-      organization: "PixElation - The Photography Society of ARSD",
-      period: "2021 - 2023",
-      description: ""
+      "name": "Frameworks & Libraries",
+      "skills": ["Sklearn","Seaborn","Django", "Node.js"]
+    },
+    {
+      "name": "Tools & Technologies",
+      "skills": ["Google Colab","Git", "Firebase", "MySQL", "XAMPP", "ESP32", "Arduino"]
+    },    
+    {
+      name: "Soft Skills",
+      skills: ["Leadership", "Communication", "Problem-solving", "Team Collaboration", "Project Management", "Mentoring"]
     }
   ];
 
-
-
-
-  // const skillCategories = [
-  //   {
-  //     "name": "Programming Languages",
-  //     "skills": ["Python", "C++", "MATLAB", "HTML5", "CSS3", "Assembly Language","JavaScript"]
-  //   },
-  //   {
-  //     "name": "Frameworks & Libraries",
-  //     "skills": ["Sklearn","Seaborn","Django", "Node.js"]
-  //   },
-  //   {
-  //     "name": "Tools & Technologies",
-  //     "skills": ["Google Colab","Git", "Firebase", "MySQL", "XAMPP", "ESP32", "Arduino"]
-  //   },    
-  //   {
-  //     name: "Soft Skills",
-  //     skills: ["Leadership", "Communication", "Problem-solving", "Team Collaboration", "Project Management", "Mentoring"]
-  //   }
-  // ];
-
   
   
-  // const referencesData = [
-  //   {
-  //     name: "Sarbajit Manna",
-  //     title: "Assistant Professor",
-  //     institution: "Ramakrishna Mission Vidyamandira",
-  //     email: "sarbajit.cs@vidyamandira.ac.in",
-  //     phone: "+91-94743 39952"
-  //   },
-  //   {
-  //     name: "Dr. Shalini Gupta",
-  //     title: "Assistant Professor",
-  //     institution: "ARSD College, University of Delhi",
-  //     email: "sgupta@arsd.du.ac.in",
-  //     phone: "+91-99111 55236"
-  //   },
-  //   {
-  //     name: "Dr. Arindam Sarkar",
-  //     title: "Assistant Professor (HOD)",
-  //     institution: "Ramakrishna Mission Vidyamandira",
-  //     email: "arindamsarkar@vidyamandira.ac.in",
-  //     phone: "+91-98517 00660"
-  //   },
-  //   {
-  //     "name": "Revered Swami Divyasudhananda",
-  //     "title": "Monastic Member and Principal",
-  //     "institution": "Ramakrishna Mission Vidyapith, Deoghar",
-  //     "email": "divyasudhananda@gmail.com",
-  //     "phone": "+91-97485 35329"
-  //   }
+  const referencesData = [
+    {
+      name: "Sarbajit Manna",
+      title: "Assistant Professor",
+      institution: "Ramakrishna Mission Vidyamandira",
+      email: "sarbajit.cs@vidyamandira.ac.in",
+      phone: "+91-94743 39952"
+    },
+    {
+      name: "Dr. Arindam Sarkar",
+      title: "Assistant Professor (HOD)",
+      institution: "Ramakrishna Mission Vidyamandira",
+      email: "arindamsarkar@vidyamandira.ac.in",
+      phone: "+91-98517 00660"
+    },
     
-  // ];
+    
+  ];
   
   return (
     <div className="page-transition-wrapper animate-page-in min-h-screen flex flex-col">
@@ -355,8 +303,6 @@ const Resume = () => {
               
               <a 
                 href="/lovable-uploads/Bodhisattwa_Baidya_CV.pdf" 
-                download="Bodhisattwa_Baidya_CV.pdf"
-                aria-label="Download CV"
                 className="px-4 py-2 bg-primary text-primary-foreground rounded-md flex items-center gap-2 hover:bg-primary/90 transition-colors self-start mt-2 md:mt-0"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -372,7 +318,7 @@ const Resume = () => {
                 {fieldsOfInterest.map((field, index) => (
                   <span 
                     key={index} 
-                    className="px-4 py-2 bg-primary/10 text-primary rounded-lg"
+                    className="px-4 py-2 bg-primary/5 font-medium text-primary rounded-lg"
                   >
                     {field}
                   </span>
@@ -462,9 +408,9 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
 
-            {/* <div className="mb-10">
+            <div className="mb-10">
               <h2 className="text-2xl font-bold mb-6">Awards</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -519,7 +465,7 @@ const Resume = () => {
             </div>
 
             <div className="mb-10">
-              <h2 className="text-2xl font-bold mb-6">Reviewer</h2>
+              <h2 className="text-2xl font-bold mb-6">Volunteering</h2>
               
               <div className="space-y-4">
                 {volunteeringData.map((item, index) => (
@@ -552,7 +498,7 @@ const Resume = () => {
               </div>
             </div>
 
-            {/* <div>
+            <div>
               <h2 className="text-2xl font-bold mb-6">References</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -574,7 +520,7 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </main>

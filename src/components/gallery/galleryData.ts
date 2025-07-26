@@ -8,6 +8,8 @@ export interface GalleryImage {
 
 // Sample gallery images
 export const galleryImages: GalleryImage[] = [
+  
+  
   {
     id: "101",
     title: "Conference at JIS",
@@ -27,8 +29,7 @@ export const galleryImages: GalleryImage[] = [
     description: "Delivered a speech on 'The Future of UAVs' at Vidyamandira College, Ramakrishna Mission.",
   
     src: "/lovable-uploads/gallery/Vidyamandira Presentation.jpg"
-  },
-  
+  }
 
 
   

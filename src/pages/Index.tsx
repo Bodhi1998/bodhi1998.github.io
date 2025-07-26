@@ -42,12 +42,12 @@ const Index = () => {
     "Deep Learning Specialist",
     "Review Editor",
     "IEEE CTSoc Member",
-    
+
   ];
   
   return (
     <>
-      {loading && <LoadingSpinner text="आत्मनो मोक्षार्थं जगद्धिताय‌ च" />}
+      {loading && <LoadingSpinner text="ब्रह्म सत्यं जगन्मिथ्या जीवो ब्रह्मैव नापरः" />}
       
       <div className={cn(
         "page-transition-wrapper min-h-screen flex flex-col",
@@ -92,9 +92,7 @@ const Index = () => {
                   </div>
                   
                   <p className="text-foreground/70 max-w-lg">
-                  I am a PhD scholar at Ramakrishna Mission Vidyamandira, specializing in UAV security, authentication, and secure path planning. A member of the IEEE CTSoc Machine Learning, Deep Learning, and AI in CE (MDA) Technical Committee, their research bridges advanced AI techniques with cutting-edge UAV applications to enhance safety, efficiency, and resilience in autonomous systems.
-
-
+                  I am a PhD scholar at Ramakrishna Mission Vidyamandira, specializing in UAV security, authentication, and secure path planning. A member of the <b> IEEE CTSoc Machine Learning, Deep Learning, and AI in CE (MDA) Technical Committee</b>, their research bridges advanced AI techniques with cutting-edge UAV applications to enhance safety, efficiency, and resilience in autonomous systems.
 
                   </p>
                   
@@ -107,10 +105,8 @@ const Index = () => {
                   </div>
                 </div>
                 
-                {/* Professional Image (hidden on mobile, shown on larger screens) */}
                 <div className="hidden md:block w-80 h-80 lg:w-96 lg:h-96 relative">
                   <div className="w-full h-full rounded-full bg-primary/10 flex items-center justify-center overflow-hidden border border-white/10 relative">
-                    {/* Person image with optimized loading */}
                     <div className="w-full h-full overflow-hidden rounded-full relative z-10">
                       <img 
                         src="/lovable-uploads/7a5ec607-643c-4b67-ad00-baa817466d01.png" 

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Github, Linkedin, Twitter, Mail, YoutubeIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -7,6 +8,7 @@ interface SocialLink {
   name: string;
   href: string;
   icon: React.ReactNode;
+  isExternal?: boolean;
 }
 
 export default function Footer() {
@@ -49,28 +51,39 @@ export default function Footer() {
       icon: <Mail className="h-5 w-5" />
     }
   ];
-  
+    
   return (
     <footer className="w-full py-8 border-t border-border">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-foreground/60">
-            © {currentYear} Bodhisattwa. All rights reserved.
+            © {currentYear} B Baidya. All rights reserved.
           </p>
           
           <div className="flex items-center space-x-4">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Visit ${link.name}`}
-                className="text-foreground/60 hover:text-primary transition-colors duration-300"
-              >
-                {link.icon}
-              </a>
-            ))}
+            {socialLinks.map((link) => 
+              link.isExternal ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${link.name}`}
+                  className="text-foreground/60 hover:text-primary transition-colors duration-300"
+                >
+                  {link.icon}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  aria-label={`Go to ${link.name}`}
+                  className="text-foreground/60 hover:text-primary transition-colors duration-300"
+                >
+                  {link.icon}
+                </Link>
+              )
+            )}
           </div>
         </div>
       </div>
